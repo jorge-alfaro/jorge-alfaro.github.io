@@ -9,6 +9,7 @@ export const getProjects = async () => {
       id: p.id,
       title: p.title,
       url: p.url,
+      desc: p.desc,
     };
   });
   return pro;

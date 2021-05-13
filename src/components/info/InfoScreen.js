@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation, useParams } from "react-router-dom";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+
 export const InfoScreen = ({ history }) => {
   const location = useLocation();
   const { id } = useParams();
