@@ -34,7 +34,10 @@ export const InfoScreen = ({ history }) => {
       <div className="animate__animated animate__fadeIn">
         <h2 className="project-title">{title}</h2>
         <p className="project-desc">
-          {desc} <a href={repo}>GitHub repo</a>
+          {desc}{" "}
+          <a target="_blank" href={repo}>
+            GitHub repo
+          </a>
         </p>
       </div>
     </>

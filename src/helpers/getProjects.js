@@ -10,6 +10,7 @@ export const getProjects = async () => {
       title: p.title,
       url: p.url,
       desc: p.desc,
+      repo: p.repo,
     };
   });
   return pro;
