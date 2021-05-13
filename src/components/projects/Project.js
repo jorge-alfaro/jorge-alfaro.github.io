@@ -18,15 +18,15 @@ const useStyles = makeStyles({
   },
 });
 
-export const Project = ({ title, url, id, data }) => {
+export const Project = ({ title, url, id, pro }) => {
   const classes = useStyles();
 
   return (
     <div className="card-mb">
-      <div className=" animate__animated animate__fadeInDown ">
+      <div className=" animate__animated animate__pulse ">
         <Card className={classes.root}>
           <CardActionArea>
-            <Link to={{ pathname: `./projects/${id}`, state: data }}>
+            <Link to={{ pathname: `./projects/${id}`, state: pro }}>
               <CardMedia className={classes.media} image={url} title={title} />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
@@ -36,7 +36,7 @@ export const Project = ({ title, url, id, data }) => {
             </Link>
           </CardActionArea>
           <CardActions>
-            <Link to={{ pathname: `./projects/${id}`, state: data }}>
+            <Link to={{ pathname: `./projects/${id}`, state: pro }}>
               <Button size="small" color="primary">
                 see More
               </Button>

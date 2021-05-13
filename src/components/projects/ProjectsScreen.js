@@ -1,29 +1,28 @@
-import React from "react";
-import { useFetch } from "../../hooks/useFetch";
+import React, { useState, useEffect } from "react";
+import { getProjects } from "../../helpers/getProjects";
 import { Loader } from "../loader/Loader";
 import { Project } from "./Project";
 
 export const ProjectsScreen = () => {
-  const url =
-    "https://portfolio-react-5f0f7-default-rtdb.firebaseio.com/proyects.json";
-
-  let { data } = useFetch(url);
+  const [pro, setPro] = useState([]);
+  useEffect(() => {
+    getProjects().then(setPro);
+  }, []);
 
   return (
     <>
-      <h1>Projects</h1>
       <div className="container">
         <div className="pos-center ">
-          {data === null ? (
+          {pro.length === 0 ? (
             <Loader />
           ) : (
-            data.map((el) => (
+            pro.map((el) => (
               <Project
                 key={el.id}
                 title={el.title}
                 url={el.url}
                 id={el.id}
-                data={data}
+                pro={pro}
               />
             ))
           )}
