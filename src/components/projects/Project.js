@@ -26,19 +26,29 @@ export const Project = ({ title, url, id, pro }) => {
       <div className=" animate__animated animate__pulse ">
         <Card className={classes.root}>
           <CardActionArea>
-            <Link to={{ pathname: `./projects/${id}`, state: pro }}>
+            <Link
+              to={{ pathname: `./projects/${id}`, state: pro }}
+              style={{
+                textDecoration: "none",
+                color: "#808080",
+                textTransform: "uppercase",
+              }}
+            >
               <CardMedia className={classes.media} image={url} title={title} />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography gutterBottom variant="h6" component="h2">
                   {title}
                 </Typography>
               </CardContent>
             </Link>
           </CardActionArea>
           <CardActions>
-            <Link to={{ pathname: `./projects/${id}`, state: pro }}>
-              <Button size="small" color="primary">
-                see More
+            <Link
+              to={{ pathname: `./projects/${id}`, state: pro }}
+              style={{ textDecoration: "none" }}
+            >
+              <Button variant="outlined" size="small" color="inherit">
+                Read More
               </Button>
             </Link>
           </CardActions>

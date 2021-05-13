@@ -35,7 +35,7 @@ export const InfoScreen = ({ history }) => {
         <h2 className="project-title">{title}</h2>
         <p className="project-desc">
           {desc}{" "}
-          <a target="_blank" href={repo}>
+          <a target="_blank" href={repo} rel="noreferrer">
             GitHub repo
           </a>
         </p>
