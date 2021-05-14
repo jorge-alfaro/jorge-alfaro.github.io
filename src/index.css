@@ -145,6 +145,7 @@ h1 {
   position: absolute;
   transition: transform 0.2s;
   left: 20px;
+  bottom: -420px;
 }
 .project-backarrow:hover {
   transform: scale(1.3);
@@ -437,7 +438,7 @@ footer {
   .project-backarrow {
     display: inline;
     position: absolute;
-    bottom: -800px;
+    /* bottom: -800px; */
     z-index: 9;
     left: 0;
   }
@@ -453,7 +454,7 @@ footer {
   .project-backarrow {
     display: inline;
     position: absolute;
-    bottom: -715px;
+    /* bottom: -715px; */
     z-index: 9;
     left: 0;
   }
@@ -503,7 +504,7 @@ footer {
   .project-backarrow {
     display: inline;
     position: absolute;
-    bottom: -675px;
+    bottom: -800px;
     z-index: 9;
     left: 0;
   }
