@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, useParams } from "react-router-dom";
-import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 
 export const InfoScreen = ({ history }) => {
   const location = useLocation();
@@ -16,14 +16,13 @@ export const InfoScreen = ({ history }) => {
     }
   };
   return (
-    <>
-      <div className="project-backarrow">
-        <ArrowBackIcon
-          color="primary"
-          style={{ fontSize: 55 }}
-          onClick={gobackhandle}
-        ></ArrowBackIcon>
-      </div>
+    <div className="card-container-info">
+      <ArrowBackIosIcon
+        className="project-backarrow"
+        color="primary"
+        style={{ fontSize: 55 }}
+        onClick={gobackhandle}
+      ></ArrowBackIosIcon>
       <div className="card-img">
         <img
           src={url}
@@ -40,6 +39,6 @@ export const InfoScreen = ({ history }) => {
           </a>
         </p>
       </div>
-    </>
+    </div>
   );
 };

@@ -1,20 +1,11 @@
 import React from "react";
-import Paper from "@material-ui/core/Paper";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
-import { Link } from "react-router-dom";
 
 export const MainInfoScreen = () => {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
   return (
     <main>
       <p className="about_me">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quis
-        rerum sunt. Check out my
+        The idea behind this project was to create a showcase of everything I've
+        worked on in the past few years.{" "}
         <a
           href="https://github.com/jorge-alfaro"
           target="_blank"
@@ -59,19 +50,8 @@ export const MainInfoScreen = () => {
           </li>
         </ol>
       </div>
-      <div className="center">
-        <Paper square>
-          <Tabs
-            value={value}
-            indicatorColor="primary"
-            textColor="primary"
-            onChange={handleChange}
-            aria-label="none"
-          >
-            <Tab label="Projects" to="/projects" component={Link} />
-            <Tab label="Courses" to="/courses" component={Link} />
-          </Tabs>
-        </Paper>
+      <div className="title-center">
+        <h2>PROJECTS</h2>
       </div>
     </main>
   );
