@@ -3,6 +3,9 @@ import React from "react";
 export const MainInfoScreen = () => {
   return (
     <main>
+      <div className="title-center">
+        <h2 id="about">ABOUT ME</h2>
+      </div>
       <p className="about_me">
         The idea behind this project was to create a showcase of everything I've
         worked on in the past few years.{" "}
@@ -51,7 +54,7 @@ export const MainInfoScreen = () => {
         </ol>
       </div>
       <div className="title-center">
-        <h2>PROJECTS</h2>
+        <h2 id="portfolio">PROJECTS</h2>
       </div>
     </main>
   );
