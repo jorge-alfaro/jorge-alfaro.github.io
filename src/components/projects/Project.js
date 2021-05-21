@@ -13,10 +13,13 @@ export const Project = ({ title, url, id, pro }) => {
             <h2>{title}</h2>
             <i></i>
           </div>
-          <div className="main">
-            <picture className="main-img">
-              <img src={url} alt={title} />
-            </picture>
+          <div className="image image--close">
+            <div className="main">
+              <picture className="main-img ">
+                <img src={url} alt={title} />
+              </picture>
+              <h3 className="image__title--close">Read more</h3>
+            </div>
           </div>
         </Link>
       </div>
