@@ -4,9 +4,11 @@ export const MainInfoScreen = () => {
   return (
     <main>
       <div className="title-center">
-        <h2 id="about">ABOUT ME</h2>
+        <h2 id="about" tabIndex="4">
+          ABOUT ME
+        </h2>
       </div>
-      <p className="about_me">
+      <p className="about_me" tabIndex="5">
         The idea behind this project was to create a showcase of everything I've
         worked on in the past few years.{" "}
         <a
@@ -20,7 +22,7 @@ export const MainInfoScreen = () => {
       </p>
       <br />
       <div className="about_me">
-        <h3>
+        <h3 tabIndex="6">
           Get in touch with me here:
           <br />
         </h3>
@@ -54,7 +56,9 @@ export const MainInfoScreen = () => {
         </ol>
       </div>
       <div className="title-center">
-        <h2 id="portfolio">PROJECTS</h2>
+        <h2 id="portfolio" tabIndex="7">
+          PROJECTS
+        </h2>
       </div>
     </main>
   );

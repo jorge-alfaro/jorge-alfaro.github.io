@@ -6,7 +6,7 @@ export const SectionSkills = ({ type }) => {
     <section className="section-c">
       <div className="container-section">
         <div className="title-center">
-          <h2>SKILLS</h2>
+          <h2 tabIndex="8">SKILLS</h2>
         </div>
         <div className="skills-container">
           {skill.map((logo) => (

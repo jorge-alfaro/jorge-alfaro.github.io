@@ -6,12 +6,18 @@ export const CoverPage = () => {
     <>
       <div className="container-intro">
         <div className="hello-intro">
-          <h2>I'M JORGE</h2>
+          <h1 tabIndex="1">I'M JORGE</h1>
         </div>
 
         <ul>
           <li>
-            <Link to="about" className="about" smooth={true} duration={1000}>
+            <Link
+              to="about"
+              className="about"
+              smooth={true}
+              duration={1000}
+              tabIndex="2"
+            >
               ABOUT ME
             </Link>
           </li>
@@ -22,6 +28,7 @@ export const CoverPage = () => {
               className="portfolio"
               smooth={true}
               duration={1000}
+              tabIndex="3"
             >
               PORTFOLIO
             </Link>
