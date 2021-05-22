@@ -12,6 +12,7 @@ export const AppRouter = () => {
     <Router>
       <div>
         <CoverPage />
+
         <MainInfoScreen />
         <Switch>
           <Route path="/" component={ContainerRoutes} />

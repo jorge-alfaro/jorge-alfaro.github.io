@@ -10,8 +10,7 @@ export const Contact = () => {
       </div>
       <div className="about_me">
         <h3 tabIndex="6">
-          Sientete libre de contactarme en español o ingles. Get in touch with
-          me here:
+          Get in touch with me here:
           <br />
         </h3>
 

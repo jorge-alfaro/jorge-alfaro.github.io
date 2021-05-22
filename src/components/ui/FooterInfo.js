@@ -3,7 +3,7 @@ export const FooterInfo = () => {
 
   return (
     <footer>
-      <div className="ja">@ Jorge Alfaro - {today.getFullYear()}</div>
+      <div className="ja">@ {today.getFullYear()} Jorge Alfaro.</div>
     </footer>
   );
 };

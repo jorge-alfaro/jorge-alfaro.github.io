@@ -17,6 +17,7 @@ export const CoverPage = () => {
               smooth={true}
               duration={1000}
               tabIndex="2"
+              title="🔻"
             >
               ABOUT ME
             </Link>
@@ -29,6 +30,7 @@ export const CoverPage = () => {
               smooth={true}
               duration={1000}
               tabIndex="3"
+              title="🔻"
             >
               PORTFOLIO
             </Link>

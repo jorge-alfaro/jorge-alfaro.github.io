@@ -6,7 +6,7 @@ import { ProjectsScreen } from "../components/projects/ProjectsScreen";
 export const ContainerRoutes = () => {
   return (
     <>
-      <div>
+      <div className="projects-container">
         <Switch>
           <Route exact path="/projects" component={ProjectsScreen} />
           <Route exact path="/projects/:id" component={InfoScreen} />
