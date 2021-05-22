@@ -8,58 +8,34 @@ export const MainInfoScreen = () => {
           ABOUT ME
         </h2>
       </div>
-      <p className="about_me" tabIndex="5">
-        The idea behind this project was to create a showcase of everything I've
-        worked on in the past few years.{" "}
-        <a
-          href="https://github.com/jorge-alfaro"
-          target="_blank"
-          rel="noreferrer"
-        >
-          github
-        </a>
-        !
-      </p>
-      <br />
-      <div className="about_me">
-        <h3 tabIndex="6">
-          Get in touch with me here:
-          <br />
-        </h3>
-
-        <ol>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/jorge-alfaro-495b4a207/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fab fa-linkedin redes"></i>
-            </a>
-          </li>
-
-          <li>
+      <div className="about-section">
+        <div className="about-item">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/portfolio-react-5f0f7.appspot.com/o/me.jpg?alt=media&token=8c75db82-fb14-4a2a-9c55-430bbf15e71c"
+            alt="Jorge Alfaro"
+          />
+        </div>
+        <div className="about-item">
+          <p className="about_me" tabIndex="5">
+            Developer with over 2 years of front end experience and passion for
+            responsive website design and a firm believer in the mobile-first
+            approach.{" "}
             <a
               href="https://github.com/jorge-alfaro"
               target="_blank"
               rel="noreferrer"
+              title="github/jorge-alfaro"
             >
-              <i className="fab fa-github redes"></i>
+              github
             </a>
-          </li>
-
-          <li>
-            <a href="mailto:jorgm.alfarc@gmail.com">
-              <i className="fas fa-envelope redes"></i>
-            </a>
-          </li>
-        </ol>
+          </p>
+          <p className="about_me">
+            However, if you have IT interests outside of the front end
+            sphere,that definitely helps to round you out as a candidate.
+          </p>
+        </div>
       </div>
-      <div className="title-center">
-        <h2 id="portfolio" tabIndex="7">
-          PROJECTS
-        </h2>
-      </div>
+      <br />
     </main>
   );
 };

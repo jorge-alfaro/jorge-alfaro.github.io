@@ -11,6 +11,11 @@ export const ProjectsScreen = () => {
 
   return (
     <>
+      <div className="title-center">
+        <h2 id="portfolio" tabIndex="7">
+          PROJECTS
+        </h2>
+      </div>
       <div className="card-container">
         {pro.length === 0 ? (
           <Loader />

@@ -18,7 +18,9 @@ export const Project = ({ title, url, id, pro }) => {
               <picture className="main-img ">
                 <img src={url} alt={title} />
               </picture>
-              <h3 className="image__title--close">Read more</h3>
+              <h3 className="image__title--close" title={title}>
+                Read more
+              </h3>
             </div>
           </div>
         </Link>

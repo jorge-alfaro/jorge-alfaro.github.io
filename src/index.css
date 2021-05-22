@@ -189,14 +189,31 @@ ol li a img {
 a {
   color: #51a0d5;
 }
-.about_me {
-  color: #858585;
-}
 
 .about_me a:hover {
   color: #ffffff;
 }
 
+/* About Section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-section img {
+  width: 450px;
+  height: auto;
+}
+.about-item {
+  width: 500px;
+  height: auto;
+}
+.about_me {
+  width: 100%;
+  color: #858585;
+  text-align: start;
+}
 /* Projects Container */
 .card-container {
   display: flex;
