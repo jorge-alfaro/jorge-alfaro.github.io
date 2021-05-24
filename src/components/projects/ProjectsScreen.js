@@ -12,7 +12,7 @@ export const ProjectsScreen = () => {
   return (
     <>
       <div className="title-center">
-        <h2 id="portfolio" tabIndex="7">
+        <h2 tabIndex="7" id="portfolio">
           PROJECTS
         </h2>
       </div>

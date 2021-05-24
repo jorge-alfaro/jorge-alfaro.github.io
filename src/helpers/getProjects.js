@@ -11,6 +11,8 @@ export const getProjects = async () => {
       url: p.url,
       desc: p.desc,
       repo: p.repo,
+      urlarge: p.urlarge,
+      tech: p.tech,
     };
   });
   return pro;

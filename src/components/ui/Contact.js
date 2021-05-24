@@ -3,11 +3,11 @@ import React from "react";
 export const Contact = () => {
   return (
     <>
-      <div className="title-center">
+      {/* <div className="title-center">
         <h2 id="portfolio" tabIndex="7">
           CONTACT
         </h2>
-      </div>
+      </div> */}
       <div className="about_me">
         <h3 tabIndex="6">
           Get in touch with me here:
