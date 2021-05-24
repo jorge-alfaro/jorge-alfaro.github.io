@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocation, useParams } from "react-router-dom";
-import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 
 export const InfoScreen = ({ history }) => {
   const location = useLocation();
@@ -17,12 +16,10 @@ export const InfoScreen = ({ history }) => {
   };
   return (
     <div className="card-container-info">
-      <ArrowBackIosIcon
-        className="project-backarrow"
-        color="primary"
-        style={{ fontSize: 55 }}
-        onClick={gobackhandle}
-      ></ArrowBackIosIcon>
+      <div onClick={gobackhandle} className="prev">
+        <span>Projects</span>
+        <em></em>
+      </div>
       <h2 className="project-title">{title}</h2>
       <div className="card-title-screen ">
         <i></i>
