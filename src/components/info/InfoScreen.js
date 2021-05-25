@@ -1,9 +1,13 @@
 import React from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 
 export const InfoScreen = ({ history }) => {
   const location = useLocation();
   const { id } = useParams();
+  if (!location.state) {
+    history.replace("/");
+    window.location.reload();
+  }
   const card = location.state[`${id}`];
   const { desc, repo, title, urlarge } = card;
 

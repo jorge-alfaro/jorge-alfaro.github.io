@@ -102,6 +102,8 @@ h1 {
 }
 /* Project container*/
 .projects-container {
+  width: 100%;
+  height: 100%;
   margin-bottom: 300px;
 }
 .mt-40 {
@@ -415,13 +417,17 @@ article .card-title-screen i:after {
 
 /* *Prev Arrow*/
 .prev {
-  left: 0;
   cursor: pointer;
+  left: -225px;
+  top: 250px;
 }
 
 .projects-container .prev {
-  position: fixed;
-  top: 25%;
+  /* position: fixed;
+  top: 25%; */
+  position: relative;
+  /* top: 50%; */
+  z-index: 200;
   width: 240px;
   height: 50%;
   -moz-transition: -moz-transform 0.7s cubic-bezier(0.7, 0, 0.25, 1) 0.25s,
