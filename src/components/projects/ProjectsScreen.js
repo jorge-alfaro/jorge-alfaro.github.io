@@ -11,25 +11,27 @@ export const ProjectsScreen = () => {
 
   return (
     <>
-      <div className="title-center">
-        <h2 tabIndex="7" id="portfolio">
-          PROJECTS
-        </h2>
-      </div>
-      <div className="card-container">
-        {pro.length === 0 ? (
-          <Loader />
-        ) : (
-          pro.map((el) => (
-            <Project
-              key={el.id}
-              title={el.title}
-              url={el.url}
-              id={el.id}
-              pro={pro}
-            />
-          ))
-        )}
+      <div className="projects-container">
+        <div className="title-center">
+          <h2 tabIndex="7" id="portfolio">
+            PROJECTS
+          </h2>
+        </div>
+        <div className="card-container">
+          {pro.length === 0 ? (
+            <Loader />
+          ) : (
+            pro.map((el) => (
+              <Project
+                key={el.id}
+                title={el.title}
+                url={el.url}
+                id={el.id}
+                pro={pro}
+              />
+            ))
+          )}
+        </div>
       </div>
     </>
   );
