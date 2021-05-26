@@ -1,14 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useModal } from "../../hooks/useModal";
+import Modal from "./Modal";
+import { ModalInfo } from "./ModalInfo";
 
-export const Project = ({ title, url, id, pro }) => {
+export const Project = (el) => {
+  const { title, url } = el;
+
+  const [isOpenModal, openModal, closeModal] = useModal(false);
+
   return (
-    <div className=" animate__animated animate__pulse">
-      <div className="card-item">
-        <Link
-          to={{ pathname: `./projects/${id}`, state: pro }}
-          style={{ textDecoration: "none" }}
-        >
+    <>
+      <Modal isOpen={isOpenModal} closeModal={closeModal}>
+        <ModalInfo {...el} />
+      </Modal>
+      <div className=" animate__animated animate__pulse">
+        <div className="card-item">
           <div className="card-title-screen">
             <h2>{title}</h2>
             <i></i>
@@ -18,13 +24,17 @@ export const Project = ({ title, url, id, pro }) => {
               <picture className="main-img ">
                 <img src={url} alt={title} />
               </picture>
-              <h3 className="image__title--close" title={title}>
+              <h3
+                className="image__title--close read-more"
+                onClick={openModal}
+                title={title}
+              >
                 Read more
               </h3>
             </div>
           </div>
-        </Link>
+        </div>
       </div>
-    </div>
+    </>
   );
 };

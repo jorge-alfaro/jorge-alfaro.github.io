@@ -17,27 +17,21 @@ export const MainInfoScreen = () => {
             />
             <p className="questions">
               Got any questions?{" "}
-              <a href="mailto:jorgm.alfarc@gmail.com">Contact me.</a>
+              <a href="mailto:jorgm.alfarc@gmail.com" title="Send me an email">
+                Contact me.
+              </a>
             </p>
           </div>
           <div className="about-item">
             <p className="about_me" tabIndex="5">
-              Hey, my name is Jorge 👋 I am Developer with over 2 years of front
-              end experience and passion for responsive website design and a
-              firm believer in the mobile-first approach.{" "}
-              {/* <a
-                href="https://github.com/jorge-alfaro"
-                target="_blank"
-                rel="noreferrer"
-                title="github/jorge-alfaro"
-              >
-                github
-              </a> */}
+              <b>Hi</b>, my name is Jorge 👋 I am from México, I Have over 2
+              years of front-end experience and passion for responsive website
+              design.{" "}
             </p>
             <p className="about_me">
-              Well-organised person, problem solver, with high attention to
-              detail. Interested in the backend and perpetually working on
-              improving my chops.
+              I am always experimenting, always learning, and never bored.
+              Interested in the backend and perpetually working on improving my
+              chops.
             </p>
           </div>
         </div>

@@ -24,10 +24,10 @@ export const ProjectsScreen = () => {
             pro.map((el) => (
               <Project
                 key={el.id}
-                title={el.title}
-                url={el.url}
-                id={el.id}
-                pro={pro}
+                // title={el.title}
+                // url={el.url}
+                // id={el.id}
+                {...el}
               />
             ))
           )}
