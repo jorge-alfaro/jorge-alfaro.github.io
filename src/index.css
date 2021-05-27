@@ -181,9 +181,7 @@ ol li a img {
   font-family: "Lora", serif;
   width: 40px;
 }
-.about_me {
-  padding-top: 30px;
-}
+
 .about_me > a {
   text-decoration: none;
   font-family: "Lora", serif;
@@ -206,20 +204,20 @@ a {
   justify-content: center;
 }
 
-.about-section img {
-  width: 350px;
-  height: auto;
-  border-radius: 50%;
-}
-
 .avatar {
   display: inline-block;
   overflow: hidden;
   line-height: 1;
   vertical-align: middle;
   flex-shrink: 0;
-  box-shadow: 0 0 0 2px rgba(205, 217, 229, 0.1);
   filter: grayscale(1);
+}
+.about-section img {
+  margin-top: 50px;
+  width: 250px;
+  box-shadow: 0 0 0 2px rgba(205, 217, 229, 0.1);
+  height: auto;
+  border-radius: 50%;
 }
 .questions {
   padding-left: 0px;
@@ -262,7 +260,10 @@ a {
   width: 100%;
   color: #858585;
   text-align: start;
+  padding: 1.5em;
+  margin: 0;
 }
+
 /* Projects Container */
 .card-container {
   display: flex;
@@ -428,7 +429,7 @@ article .card-title-screen i:after {
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.7);
   display: none;
   justify-content: center;
   align-items: center;
@@ -445,13 +446,16 @@ article .card-title-screen i:after {
   min-height: 200px;
   max-height: 830px;
   overflow-y: scroll;
-  background-color: inherit;
+  background-color: rgba(85, 85, 85, 0.85);
 }
 
 .modal-close {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  color: rgb(150, 35, 35);
+  font-size: 45px;
+  cursor: pointer;
 }
 
 /* Info Page*/
@@ -578,11 +582,56 @@ footer {
   background-color: #f8f8f8;
 }
 
-.back-btn {
-  position: fixed;
-  margin-top: 2%;
-  margin-left: 2%;
-  width: 57px;
-  height: 36px;
-  z-index: 999;
+@media screen and (max-width: 420px) {
+  .about_me {
+    padding: 1em;
+    font-size: medium;
+  }
+  .about-section img {
+    width: 200px;
+    margin-top: 10px;
+  }
+
+  .card-item {
+    width: 410px;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  .redes {
+    font-size: 35px;
+  }
+  .ja {
+    font-size: small;
+  }
+  /* Modal */
+  .project-title {
+    font-size: 1.5em;
+  }
+  .text h2 {
+    font-size: 1em;
+    letter-spacing: -0.02em;
+  }
+  .text p {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+  }
+  .text li {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card-item {
+    width: 370px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .card-item {
+    width: 375px;
+  }
+}
+@media screen and (max-width: 361px) {
+  .card-item {
+    width: 355px;
+  }
 }

@@ -1,15 +1,9 @@
 import React from "react";
 
 export const ModalInfo = ({ desc, repo, title, urlarge, tech }) => {
-  console.log(tech);
-
   return (
     <div className="projects-container">
       <div className="card-container-info">
-        <div className="prev">
-          <span>Projects</span>
-          <em></em>
-        </div>
         <h2 className="project-title">{title}</h2>
         <div className="card-title-screen ">
           <i></i>
