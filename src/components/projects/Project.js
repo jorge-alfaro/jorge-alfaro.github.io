@@ -7,14 +7,14 @@ export const Project = (el) => {
   const { title, url } = el;
 
   const [isOpenModal, openModal, closeModal] = useModal(false);
-
+  console.log(el);
   return (
     <>
       <Modal isOpen={isOpenModal} closeModal={closeModal}>
         <ModalInfo {...el} />
       </Modal>
       <div className=" animate__animated animate__pulse">
-        <div className="card-item">
+        <div className="card-item" tabIndex={10 + el.id}>
           <div className="card-title-screen">
             <h2>{title}</h2>
             <i></i>

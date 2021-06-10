@@ -13,7 +13,7 @@ export const ProjectsScreen = () => {
     <>
       <div className="projects-container">
         <div className="title-center">
-          <h2 tabIndex="7" id="portfolio">
+          <h2 tabIndex="9" id="portfolio">
             PROJECTS
           </h2>
         </div>

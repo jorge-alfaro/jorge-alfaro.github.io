@@ -56,7 +56,7 @@ img {
 }
 #particles-js {
   height: 100%;
-  background: lightblue;
+  background: lightskyblue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,14 +208,16 @@ a {
   display: inline-block;
   overflow: hidden;
   line-height: 1;
-  vertical-align: middle;
+  /* vertical-align: middle; */
+
   flex-shrink: 0;
-  filter: grayscale(1);
+  filter: grayscale(80%);
 }
 .about-section img {
   margin-top: 50px;
   width: 250px;
-  box-shadow: 0 0 0 2px rgba(205, 217, 229, 0.1);
+  /* width: 200px; */
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
   height: auto;
   border-radius: 50%;
 }
@@ -255,6 +257,14 @@ a {
 .about-item {
   width: 500px;
   height: auto;
+}
+.about-item:first-child {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/portfolio-react-5f0f7.appspot.com/o/hane.jpg?alt=media&token=f66246f4-44ca-474b-8c21-e518c1a47e42);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  background-blend-mode: initial;
+  background-color: black;
 }
 .about_me {
   width: 100%;
@@ -350,8 +360,9 @@ article .card-title-screen i:after {
   box-shadow: 0 0 50px rgb(0 0 0 / 75%) inset;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 99%;
+  height: 98%;
+  border: 2px solid white;
 }
 .card-container .main-img {
   width: 100%;

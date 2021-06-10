@@ -4,7 +4,7 @@ export const FooterInfo = () => {
   return (
     <footer>
       <div className="about_me">
-        <h3 tabIndex="6">
+        <h3 tabIndex="13">
           Get in touch with me here:
           <br />
         </h3>
@@ -16,6 +16,7 @@ export const FooterInfo = () => {
               target="_blank"
               rel="noreferrer"
               title="LinkedIn"
+              tabIndex="14"
             >
               <i className="fab fa-linkedin redes"></i>
             </a>
@@ -27,18 +28,21 @@ export const FooterInfo = () => {
               target="_blank"
               rel="noreferrer"
               title="Github"
+              tabIndex="15"
             >
               <i className="fab fa-github redes"></i>
             </a>
           </li>
 
           <li>
-            <a href="mailto:jorgm.alfarc@gmail.com" title="Email">
+            <a href="mailto:jorgm.alfarc@gmail.com" title="Email" tabIndex="16">
               <i className="fas fa-envelope redes"></i>
             </a>
           </li>
         </ol>
-        <div className="ja">@ {today.getFullYear()} Jorge Alfaro.</div>
+        <div className="ja" tabIndex="17">
+          @ {today.getFullYear()} Jorge Alfaro.
+        </div>
       </div>
     </footer>
   );
