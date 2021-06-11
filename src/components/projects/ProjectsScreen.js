@@ -10,29 +10,21 @@ export const ProjectsScreen = () => {
   }, []);
 
   return (
-    <>
-      <div className="projects-container">
-        <div className="title-center">
-          <h2 tabIndex="9" id="portfolio">
-            PROJECTS
-          </h2>
-        </div>
-        <div className="card-container">
-          {pro.length === 0 ? (
-            <Loader />
-          ) : (
-            pro.map((el) => (
-              <Project
-                key={el.id}
-                // title={el.title}
-                // url={el.url}
-                // id={el.id}
-                {...el}
-              />
-            ))
-          )}
+    <div>
+      <div className="projects-container" id="portfolio">
+        <div data-aos="fade-up">
+          <div className="title-center">
+            <h2 tabIndex="9">PROJECTS</h2>
+          </div>
+          <div className="card-container">
+            {pro.length === 0 ? (
+              <Loader />
+            ) : (
+              pro.map((el) => <Project key={el.id} {...el} />)
+            )}
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

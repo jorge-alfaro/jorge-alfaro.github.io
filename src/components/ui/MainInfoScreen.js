@@ -4,7 +4,7 @@ export const MainInfoScreen = () => {
   return (
     <>
       <p id="about"></p>
-      <main className="main-container">
+      <main className="main-container" data-aos="fade-up">
         <div className="title-center">
           <h2 tabIndex="4">ABOUT ME</h2>
         </div>

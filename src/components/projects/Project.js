@@ -13,7 +13,7 @@ export const Project = (el) => {
       <Modal isOpen={isOpenModal} closeModal={closeModal}>
         <ModalInfo {...el} />
       </Modal>
-      <div className=" animate__animated animate__pulse">
+      <div>
         <div className="card-item" tabIndex={10 + el.id}>
           <div className="card-title-screen">
             <h2>{title}</h2>
@@ -38,3 +38,5 @@ export const Project = (el) => {
     </>
   );
 };
+
+// className = " animate__animated animate__pulse";
