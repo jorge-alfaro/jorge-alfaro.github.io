@@ -463,9 +463,11 @@ article .card-title-screen i:after {
   min-width: 320px;
   max-width: 900px;
   min-height: 200px;
-  max-height: 830px;
+  /* max-height: 830px; */
+  max-height: 100vh;
   overflow-y: scroll;
-  background-color: rgba(85, 85, 85, 0.85);
+  /* background-color: rgba(85, 85, 85, 0.85); */
+  background-color: rgba(57, 98, 136, 0.7);
 }
 
 .modal-close {
@@ -649,7 +651,7 @@ footer {
     width: 375px;
   }
 }
-@media screen and (max-width: 361px) {
+@media screen and (max-width: 360px) {
   .card-item {
     width: 355px;
   }
