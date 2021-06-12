@@ -22,6 +22,11 @@ export const CoverPage = () => {
               ABOUT ME
             </Link>
           </li>
+          <li>
+            <Link to="" className="pipe">
+              |
+            </Link>
+          </li>
 
           <li>
             <Link

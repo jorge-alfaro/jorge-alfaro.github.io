@@ -7,7 +7,6 @@ export const Project = (el) => {
   const { title, url } = el;
 
   const [isOpenModal, openModal, closeModal] = useModal(false);
-  console.log(el);
   return (
     <>
       <Modal isOpen={isOpenModal} closeModal={closeModal}>

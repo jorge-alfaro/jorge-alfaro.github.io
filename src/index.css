@@ -44,19 +44,23 @@ ul {
   font-size: 16px;
   font-family: "Lato", sans-serif;
   font-weight: 405;
-  color: #585858;
+  color: rgb(255, 255, 255);
   text-align: center;
   margin: 6px;
   cursor: pointer;
 }
-
+.pipe {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin: 6px;
+}
 img {
   height: auto;
   width: 100%;
 }
 #particles-js {
   height: 100%;
-  background: lightskyblue;
+  background: #64bcf6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +71,7 @@ img {
 }
 
 .container-intro a:hover {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: none;
 }
@@ -515,7 +519,7 @@ article .card-title-screen i:after {
 .text p {
   margin-bottom: 1em;
   text-align: left;
-  color: #8a8a8a;
+  color: #cacaca;
   width: 100%;
 }
 .text .section ul {
@@ -528,7 +532,7 @@ article .card-title-screen i:after {
   margin-bottom: 3px;
   font-size: 1.3em;
   line-height: 1.65em;
-  color: #8a8a8a;
+  color: #cacaca;
 }
 
 .text > div {
