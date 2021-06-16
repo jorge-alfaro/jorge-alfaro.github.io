@@ -12,7 +12,7 @@ export const ProjectsScreen = () => {
   return (
     <div>
       <div className="projects-container" id="portfolio">
-        <div className="title-center" data-aos="fade-up">
+        <div className="title-center">
           <h2 tabIndex="9">PROJECTS</h2>
         </div>
         <div className="card-container">

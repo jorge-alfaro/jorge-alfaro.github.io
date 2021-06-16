@@ -12,7 +12,7 @@ export const MainInfoScreen = () => {
           <article className="about-item">
             <img
               className="avatar"
-              src="https://firebasestorage.googleapis.com/v0/b/portfolio-react-5f0f7.appspot.com/o/me.jpg?alt=media&token=8c75db82-fb14-4a2a-9c55-430bbf15e71c"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-react-5f0f7.appspot.com/o/thi5s.jpg?alt=media&token=8dc98f76-246c-4c2b-9225-9e43721c2ed0"
               alt="Jorge Alfaro"
               title="Jorge Alfaro"
               loading="lazy"
