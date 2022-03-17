@@ -86,7 +86,7 @@ img {
   width: 100px;
   margin-left: -50px;
   position: absolute;
-  bottom: 20px;
+  bottom: 70px;
   left: 50%;
   fill: #686868;
   cursor: pointer;
@@ -149,12 +149,14 @@ h1 {
 .title-center h2 {
   margin: 0;
 }
-.phrase h2 {
+.phrase{
   text-align: center;
+}
+.phrase h2 {
   color: #cacaca;
-  padding-bottom: 25px;
-  padding-top: 15px;
   font-family: "Josefin Slab", serif;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .project-title {
@@ -245,7 +247,17 @@ a {
   text-align: center;
   justify-content: center;
 }
+.about--right{
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
 
+}
+.about_me .about--cv{
+  text-decoration: underline;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.3rem;
+}
 .avatar {
   display: inline-block;
   overflow: hidden;
@@ -303,8 +315,6 @@ a {
   background-image: url(https://firebasestorage.googleapis.com/v0/b/portfolio-react-5f0f7.appspot.com/o/han.jpg?alt=media&token=e5c1f45a-2d36-413c-b178-1f79dd81ca90);
   background-repeat: no-repeat;
   background-size: contain;
-  /* background-position: top; */
-  /* background-blend-mode: initial; */
   background-color: #6eb4ff75;
   opacity: 1;
   box-shadow: inset 0 0 12px 0 #b6b2b2;
@@ -312,11 +322,12 @@ a {
 }
 .about_me {
   width: 100%;
-  color: #858585;
+  color: #cacaca;
   text-align: start;
   padding: 1em 1.5em 0 1.5em;
   margin: 0;
 }
+
 
 /* Projects Container */
 .card-container {
@@ -665,7 +676,7 @@ footer {
 @media screen and (max-width: 420px) {
   .about_me {
     padding: 1em;
-    font-size: medium;
+    font-size:larger;
   }
   .about-section img {
     width: 200px;

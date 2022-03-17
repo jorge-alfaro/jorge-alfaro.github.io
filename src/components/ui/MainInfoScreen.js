@@ -39,18 +39,23 @@ export const MainInfoScreen = () => {
               I am always experimenting, always learning, and never bored.
               Interested in the backend and perpetually working on improving my
               chops.
-              <a
-                download={"Jorge_Alfaro_CV.pdf"}
-                href={
-                  "https://firebasestorage.googleapis.com/v0/b/portfolio-react-5f0f7.appspot.com/o/cv%2FJorge-Alfaro-CV.pdf?alt=media&token=4d078b08-5a26-4a06-a8ba-c3136ce1080e"
-                }
-                target="_blank"
-                rel="noreferrer"
-              >
-                {" "}
-                📑CV
-              </a>
             </p>
+           
+              <p className="about_me">
+                 <div class="about--right">
+                  <a className="about--cv"
+                  download={"Jorge_Alfaro_CV.pdf"}
+                  href={
+                    "https://firebasestorage.googleapis.com/v0/b/portfolio-react-5f0f7.appspot.com/o/cv%2FJorge-Alfaro-CV.pdf?alt=media&token=4d078b08-5a26-4a06-a8ba-c3136ce1080e"
+                  }
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                 📥 Download CV
+                </a>
+                </div>
+                </p>
+            
           </article>
         </section>
         <br />
