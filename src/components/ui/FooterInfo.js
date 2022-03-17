@@ -4,6 +4,7 @@ export const FooterInfo = () => {
   return (
     <footer>
       <div className="about_me">
+        <div className="footer-line"></div>
         <h3 tabIndex="13">
           Get in touch with me here:
           <br />

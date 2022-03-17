@@ -295,7 +295,8 @@ a {
   width: 100%;
 }
 .about-item {
-  width: 500px;
+  max-width: 500px;
+  width: 95%;
   height: auto;
 }
 .about-item:first-child {
@@ -304,9 +305,9 @@ a {
   background-size: contain;
   background-position: top;
   background-blend-mode: initial;
-  background-color: #6eb5ff;
+  background-color: #6eb4ff75;
   opacity: 1;
-  box-shadow: inset 0 0 12px 0 #686868;
+  box-shadow: inset 0 0 12px 0 #b6b2b2;
   border-radius: 15px;
 }
 .about_me {
@@ -405,8 +406,8 @@ article .card-title-screen i:after {
   box-shadow: 0 0 50px rgb(0 0 0 / 75%) inset;
   top: 0;
   left: 0;
-  width: 99%;
-  height: 98%;
+  width: 100%;
+  height: 100%;
   border: 2px solid rgba(255, 255, 255, 0.4);
 }
 .card-container .main-img {
@@ -609,15 +610,17 @@ article .card-title-screen i:after {
 }
 
 footer {
-  margin-top: 50px;
-  border-top: black solid 3px;
-  box-shadow: 0 1px 0 0 #858585;
-  height: 0px;
-  background-color: inherit;
-  color: #858585;
   width: 100%;
 }
-
+.footer-line {
+  border-top: black solid 3px;
+  box-shadow: 0 1px 0 0 #858585;
+  background-color: inherit;
+  color: #858585;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
 .ja {
   padding-bottom: 15px;
   text-align: center;
