@@ -20,14 +20,16 @@ export const AppRouter = () => {
     <Router>
       <div>
         <CoverPage />
-        <MainInfoScreen />
-        <Switch>
-          <Route exact path="/" component={ProjectsScreen} />
-          <Route path="*" component={ProjectsScreen} />
-          <Redirect to="/" />
-        </Switch>
-        <Phrase />
-        <FooterInfo />
+        <div className="p-wallpaper">
+          <MainInfoScreen />
+          <Switch>
+            <Route exact path="/" component={ProjectsScreen} />
+            <Route path="*" component={ProjectsScreen} />
+            <Redirect to="/" />
+          </Switch>
+          <Phrase />
+          <FooterInfo />
+        </div>
       </div>
     </Router>
   );

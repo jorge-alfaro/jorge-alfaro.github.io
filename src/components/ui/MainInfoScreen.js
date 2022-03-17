@@ -6,7 +6,9 @@ export const MainInfoScreen = () => {
       <p id="about"></p>
       <main className="main-container" data-aos="fade-up">
         <div className="title-center">
-          <h2 tabIndex="4">ABOUT ME</h2>
+          <h2 className="abt" tabIndex="4">
+            ABOUT ME
+          </h2>
         </div>
         <section className="about-section">
           <article className="about-item">
@@ -30,9 +32,9 @@ export const MainInfoScreen = () => {
           </article>
           <article className="about-item">
             <p className="about_me" tabIndex="7">
-              <b>Hi</b>, my name is Jorge 👋 I am from México, I have over 2
-              years of front-end experience and passion for responsive website
-              design.{" "}
+              <b>Hi</b>, my name is Jorge 👋, based in México, I have almost 3
+              years of front-end and 2 years of back-end experience and passion
+              for responsive website design.{" "}
             </p>
             <p className="about_me" tabIndex="8">
               I am always experimenting, always learning, and never bored.
