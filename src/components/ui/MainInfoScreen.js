@@ -17,7 +17,6 @@ export const MainInfoScreen = () => {
               src="https://firebasestorage.googleapis.com/v0/b/portfolio-react-5f0f7.appspot.com/o/thi5s.jpg?alt=media&token=8dc98f76-246c-4c2b-9225-9e43721c2ed0"
               alt="Jorge Alfaro"
               title="Jorge Alfaro"
-              loading="lazy"
             />
             <p className="questions" tabIndex="5">
               Got any questions?{" "}
@@ -40,6 +39,17 @@ export const MainInfoScreen = () => {
               I am always experimenting, always learning, and never bored.
               Interested in the backend and perpetually working on improving my
               chops.
+              <a
+                download={"Jorge_Alfaro_CV.pdf"}
+                href={
+                  "https://firebasestorage.googleapis.com/v0/b/portfolio-react-5f0f7.appspot.com/o/cv%2FJorge-Alfaro-CV.pdf?alt=media&token=4d078b08-5a26-4a06-a8ba-c3136ce1080e"
+                }
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                📑CV
+              </a>
             </p>
           </article>
         </section>
